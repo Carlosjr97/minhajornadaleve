@@ -117,4 +117,17 @@ body {
 font-size: 14px; /* Ajuste ainda menor da fonte do botão */
         padding: 8px 16px; /* Ajusta o padding */
     }
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    background-image: url('photo2.jpg'); /* Coloque o link da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
 }
