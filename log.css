@@ -1,0 +1,120 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    background-image: url('/img/photo-1434754205268-ad3b5f549b11.jpg'); /* Coloque o link da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Container dos dias */
+.days-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 20px;
+    gap: 10px;
+}
+/* Estilo para cada dia */
+.day {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.day:hover {
+    transform: scale(1.02);
+    background-color: #E3E3E3;
+}
+/* Cores de fundo e hover específicas de cada dia */
+#monday,
+#tuesday,
+#wednesday,
+#thursday,
+#friday {
+    background-color: #FFCC33; /* Laranja Claro */
+}
+#monday:hover,
+#tuesday:hover,
+#wednesday:hover,
+#thursday:hover,
+#friday:hover {
+    background-color: #E6B800; /* Escurece no hover */
+}
+/* Botão de início elegante */
+.home-button {
+    position: fixed;
+    top: 15px; /* Leve distância do topo */
+    left: 15px; /* Leve distância da esquerda */
+    padding: 12px 24px; /* Mais espaçamento interno */
+    background: linear-gradient(135deg, #6A11CB, #2575FC); /* Gradiente moderno */
+    color: #fff; /* Cor do texto branca */
+    font-size: 18px; /* Tamanho do texto maior */
+    font-weight: bold; /* Texto em negrito */
+    font-family: Arial, sans-serif; /* Fonte moderna */
+    border: none; /* Sem bordas padrão */
+    border-radius: 30px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor "pointer" */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra agradável */
+    transition: all 0.3s ease-in-out; /* Animações suaves */
+    z-index: 1000; /* Garante que esteja acima do resto */
+}
+.home-button:hover {
+    background: linear-gradient(135deg, #2575FC, #6A11CB); /* Inverte o gradiente */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3); /* Mais sombra ao passar o mouse */
+    transform: translateY(-2px) scale(1.05); /* Elevação e leve aumento do tamanho */
+}
+.home-button:active {
+    background: linear-gradient(135deg, #5E10B1, #1E62D0); /* Tons mais escuros no gradiente */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4); /* Botão afunda */
+    transform: translateY(2px) scale(0.98); /* Pequena redução de tamanho */
+}
+/* Media queries para telas menores */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Ajusta a direção para vertical */
+        padding: 20px; /* Adiciona espaçamento interno */
+    }
+    .days-container {
+        gap: 15px; /* Aumenta o espaçamento entre elementos */
+    }
+    .day {
+        font-size: 1rem; /* Diminui o tamanho da fonte */
+        padding: 15px; /* Ajusta o preenchimento */
+    }
+    .home-button {
+        position: static; /* Torna o botão relativo */
+        margin-bottom: 20px;
+        padding: 10px 20px; /* Ajusta o padding */
+        font-size: 16px; /* Reduz o tamanho do botão */
+    }
+}
+@media (max-width: 480px) {
+    .days-container {
+        width: 100%; /* Usa todo o espaço disponível */
+    }
+    .day {
+        font-size: 0.9rem; /* Reduz ainda mais o tamanho da fonte */
+        padding: 10px; /* Ajusta o preenchimento */
+    }
+    .home-button {
+21h23
+font-size: 14px; /* Ajuste ainda menor da fonte do botão */
+        padding: 8px 16px; /* Ajusta o padding */
+    }
+}

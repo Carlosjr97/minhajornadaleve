@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queime Mais, Pese Menos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+       body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Rubik', sans-serif;
+            background: black;
+            color: white;
+        }
+
+        h1, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #FF7300;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: #FFC47C;
+        }
+
+        .exercise {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 500px;
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .exercise:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .exercise h2 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            color: #FF7300;
+            border-bottom: 2px solid #FF7300;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .exercise p {
+            margin: 5px 0;
+            color: #eee;
+        }
+
+        .exercise img {
+            display: block;
+            width: 100%;
+            max-width: 150px;
+            border-radius: 8px;
+            margin: 10px auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .demonstração {
+            transition: transform 0.3s;
+        }
+
+        .demonstração:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+                .back-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente moderno */
+            padding: 10px 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .back-button:hover {
+       background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradiente moderno */
+            transform: scale(1.05);
+        }
+        .back-button-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(135deg);
+            margin-right: 10px;
+            transition: transform 0.3s;
+        }
+        .back-button:hover .back-button-icon {
+            transform: rotate(135deg) scale(1.1);
+        }
+                /* RESPONSIVIDADE */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            .exercise {
+                padding: 15px;
+                max-width: 90%;
+                margin: 15px auto;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+h3 {
+                font-size: 1em;
+            }
+            .exercise h2 {
+                font-size: 1.3em;
+            }
+            .exercise img {
+                max-width: 100px;
+            }
+            .back-button {
+                font-size: 0.8rem;
+                padding: 8px 10px;
+            }
+            .back-button-icon {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <a href="log.html" class="back-button">
+        <span class="back-button-icon"></span>
+        Voltar
+    </a>
+    <h1>Dia de Cardio</h1>
+    <div class="exercise">
+        <h2>Esteira</h2>
+        <p>Tempo: 30-50min</p>
+        <img src="img/QutK.gif" alt="Demonstração de Cadeira Adutora" class="demonstração">
+    </div>
+    

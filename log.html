@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queime Mais, Pese Menos</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<body>
+
+    <!-- Botão de início elegante -->
+    <button class="home-button" onclick="redirectToHome()">&#x1F3E0; Início</button> <!-- Ícone de Casa -->
+
+    <main class="days-container">
+        <div class="day" id="monday">Segunda-Feira</div>
+        <div class="day" id="tuesday">Terça-Feira</div>
+        <div class="day" id="wednesday">Quarta-Feira</div>
+        <div class="day" id="thursday">Quinta-Feira</div>
+        <div class="day" id="friday">Sexta-Feira</div>
+    </main>
+
+    <script>
+        // Função para redirecionar para a página inicial
+        function redirectToHome() {
+            window.location.href = 'index.html';
+        }
+
+        document.getElementById('monday').addEventListener('click', function() {
+            window.location.href = 'segunda.html';
+        });
+
+        document.getElementById('tuesday').addEventListener('click', function() {
+            window.location.href = 'terca.html';
+        });
+
+        document.getElementById('wednesday').addEventListener('click', function() {
+            window.location.href = 'quarta.html';
+        });
+
+        document.getElementById('thursday').addEventListener('click', function() {
+            window.location.href = 'quinta.html';
+        });
+
+        document.getElementById('friday').addEventListener('click', function() {
+            window.location.href = 'sexta.html';
+        });
+    </script>
+</body>
+</html>

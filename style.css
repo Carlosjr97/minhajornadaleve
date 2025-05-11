@@ -1,0 +1,123 @@
+/* Reset básico */
+body {
+  font-family: 'Poppins', sans-serif; /* Aplicar a fonte Poppins em todo o documento */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    background-image: url('/img/photo-1434754205268-ad3b5f549b11.jpg'); /* Coloque o link da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.treino-container {
+    margin-top: 170px;
+    text-align: center;
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra discreta */
+}
+
+.treino-container h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.treino-imagem {
+    max-width: 15%;
+    border-radius: 8px;
+}
+
+.meu-treino-botao {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6A11CB, #2575FC); /* Gradiente moderno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.meu-treino-botao:hover {
+    background: linear-gradient(135deg, #6A11CB, #1F68EF); /* Gradiente refinado no hover */
+    transform: scale(1.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .treino-container {
+        margin-top: 100px;
+        width: 90%;
+        max-width: 300px; /* Reduzir largura máxima em tablets e celulares */
+        padding: 15px;
+    }
+
+    .treino-container h1 {
+        font-size: 24px; /* Reduzir o tamanho da fonte */
+    }
+
+    .treino-imagem {
+        max-width: 30%; /* Ajustar tamanho da imagem para tablets */
+    }
+
+    .meu-treino-botao {
+        padding: 8px 16px; /* Reduzir o padding do botão */
+        font-size: 14px; /* Ajustar tamanhos menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .treino-container {
+        margin-top: 80px;
+        padding: 10px;
+    }
+
+    .treino-container h1 {
+        font-size: 20px; /* Ajustar para telas ainda menores */
+    }
+
+    .treino-imagem {
+        max-width: 20%; /* Reduzir ainda mais em telas muito pequenas */
+    }
+
+    .meu-treino-botao {
+        font-size: 12px; /* Botão com fonte menor */
+        padding: 6px 12px;
+    }
+}
+
+    /* Adicionando estilo para animação frase por frase */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px); /* Efeito de subida */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Posição final */
+      }
+    }
+
+      /* Animação de fadeIn para as frases */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px); /* Efeito de subida */
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); /* Posição final */
+      }
+    }
+
+ 

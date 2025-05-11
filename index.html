@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queime Mais, Pese Menos</title>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="treino-container">
+    <h1>Queime Mais, Pese Menos</h1>
+    <img src="img/fogo.png" alt="Plano de treino" class="treino-imagem">
+    <button class="meu-treino-botao" id="botao-treino">Partiu treino!</button>
+  </div>
+
+
+</body>
+</html>
+<script>
+    // Aguardar o carregamento da página para garantir que os elementos do DOM são acessíveis.
+    document.addEventListener('DOMContentLoaded', function () {
+      // Localizar o botão pelo nome da classe
+      const botaoTreino = document.querySelector('.meu-treino-botao');
+  
+      // Adicionar o evento de clique ao botão
+      botaoTreino.addEventListener('click', function () {
+        // Redirecionar para log.html
+        window.location.href = 'log.html';
+      });
+    });
+  </script>
