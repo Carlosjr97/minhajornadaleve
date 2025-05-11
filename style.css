@@ -94,6 +94,19 @@ body {
         font-size: 12px; /* Botão com fonte menor */
         padding: 6px 12px;
     }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    background-image: url('photo2.jpg'); /* Coloque o link da sua imagem aqui */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 }
 
     /* Adicionando estilo para animação frase por frase */
